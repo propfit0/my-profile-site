@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e6e8ec;
+    --muted: #9aa2af;
+    --accent: #6ea8fe;
+    --border: #262b34;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 20px;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6ea8fe, #a06efe);
+    flex-shrink: 0;
+  }
+  h1 {
+    margin: 0 0 4px;
+    font-size: 22px;
+  }
+  .subtitle {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 15px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 16px;
+  }
+  p.bio {
+    line-height: 1.7;
+    color: var(--text);
+    margin: 0;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .skill {
+    background: rgba(110, 168, 254, 0.12);
+    color: var(--accent);
+    border: 1px solid rgba(110, 168, 254, 0.3);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+  .links {
+    display: flex;
+    gap: 12px;
+  }
+  .links a {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    transition: border-color 0.15s;
+  }
+  .links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 24px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="card profile">
+    <div class="avatar"></div>
+    <div>
+      <h1>propfit0</h1>
+      <p class="subtitle">Software Developer</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>About</h2>
+    <p class="bio">안녕하세요! 이 페이지는 저를 소개하는 개인 프로필 웹사이트입니다. 여기에 자기소개, 관심 분야, 진행 중인 프로젝트 등을 자유롭게 채워보세요.</p>
+  </section>
+
+  <section class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Git</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Links</h2>
+    <div class="links">
+      <a href="https://github.com/propfit0" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:propfit0@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 propfit0. All rights reserved.</footer>
+</main>
+</body>
+</html>
